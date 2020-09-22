@@ -94,7 +94,7 @@ def fetch_highwater(client, callback):
                 logging.debug('Requesting high-water marks from %(node)s',
                               {'topic': topic, 'node': node})
 
-                request = OffsetRequest[0](
+                request = OffsetRequest[5](
                     -1,
                     [(topic,
                       [(partition, OffsetResetStrategy.LATEST, 1)
